@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+    <link rel="stylesheet" href="./scss/style-info.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <img src="./images/Avatar.jpg" alt="avatar">
+    <h1>My Information</h1>
+    <div id="basic">
+        <h3>Basic Info</h3>
+        <div id="basic1">
+        <p>Name: Đỗ Minh Hiếu</p>
+        <p>Date of Birth: 18/09/1997</p>
+        </div>
+    </div>
+    <div id="favor">
+        <h3>Favor</h3>
+        <div id="favor2">
+        <h4>Sở thích</h4>
+        <p>Nghe nhạc, đọc truyện, chơi game.</p>
+        <h4>Sở ghét</h4>
+        <p>Động não suy nghĩ bài tập</p>
+    </div>
+    </div>
+    <div id="contact">
+        <div id="contact1">
+            <p>Address: Hoang mai ha noi</p>
+            <p>Phone: 0963258652</p>
+            <p>Email: hiuej@gmail.com</p>
+        </div>
+    </div>
+    <div id="social">
+        <p><i class="bi bi-facebook"></i> Đỗ Minh Hiếu</p>
+        <p><i class="bi bi-github"> https://github.com/hieu45666/</i></p>
+    </div>
+    <script language="javascript">
+     document.getElementById("basic1").style.display = 'none';  
+         document.getElementById("basic").onclick = function () {
+            if (document.getElementById("basic1").style.display == 'none')
+                {document.getElementById("basic1").style.display = 'block';}
+            else
+            {document.getElementById("basic1").style.display = 'none';}
+            };
+    </script>
+</body>
+</html>

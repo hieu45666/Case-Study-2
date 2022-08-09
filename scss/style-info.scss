@@ -1,0 +1,69 @@
+$fontsize: 24px;
+$font: 'Dancing Script', cursive;
+$dodayborder: 2px;
+$mauborder: greenyellow;
+$loai: solid;
+
+@mixin setborder($day, $style, $color) {
+    border: $day $style $color;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: $fontsize;
+    font-family: $font;
+    text-align: center;
+}
+
+img {
+    width: 20%;
+    border-radius: 30px;
+    margin: auto;
+    border-width: 5px;
+    border-style: outset;
+    border-color: brown;
+}
+
+#basic {
+    background-color: aqua;
+    @include setborder($dodayborder, $loai, $mauborder);
+    width: 100%;
+    height: 7%;
+    cursor: pointer;
+
+    h3 {
+        margin: 0;
+    }
+}
+
+#favor {
+    background-color: blueviolet;
+
+    h3 {
+        margin: 0;
+    }
+
+    #favor2 {
+        display: none;
+        h4, p {
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+#favor:hover #favor2{
+    display: block;
+}
+
+#contact {
+    background-color: chartreuse;
+}
+
+#social {
+    background-color: darkorange;
+}
