@@ -1,5 +1,6 @@
 $fontsize: 24px;
 $font: 'Dancing Script', cursive;
+$primary_color: violet;
 
 html, body {
     width: 100%;
@@ -14,7 +15,7 @@ html, body {
 header {
     width: 100%;
     height: 10%;
-    background-color: violet;
+    background-color: $primary_color;
 
 img {
     height: 100%;
@@ -68,16 +69,15 @@ h1 {
 }
 
 footer {
-    
+    background-color: $primary_color;
     width: 100%;
-    height: 15%;
-    .info {
-        width: 50%;
-        float: left;
-    }
+    height: 5%;
+    text-align: center;
+}
 
-    .contact {
-        width: 50%;
-        float: right;
+.main {
+    img {
+        width: 100%;
+        height: 700px;
     }
 }

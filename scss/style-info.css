@@ -25,6 +25,9 @@ img {
   height: 7%;
   cursor: pointer;
 }
+#basic #basic1 {
+  display: none;
+}
 #basic h3 {
   margin: 0;
 }
