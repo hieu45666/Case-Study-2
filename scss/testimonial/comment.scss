@@ -1,0 +1,68 @@
+form {
+    width: 100%;
+    position: relative;
+}
+
+input {
+    width: 60%;
+    margin: 10px auto;
+    display: block;
+    padding: 10px;
+}
+
+.input-cmt {
+    height: 60px;
+}
+
+label {
+    position: absolute;
+    color: gray;
+    opacity: 0.5;
+}
+
+.label-name {
+    top: 15px;
+    left: 20%;
+    transition: 0.25s;
+}
+
+.label-email {
+    top: 60px;
+    left: 20%;
+}
+
+.label-cmt {
+    top: 100px;
+    left: 20%;
+}
+
+
+.input-name:not(:placeholder-shown) + .label-name, 
+.input-name:focus + .label-name {
+        top: 0;
+        background-color: white;
+        padding: 0 10px;
+        color: black;
+        left: 21%;
+        opacity: 1;
+    }
+
+.input-email:not(:placeholder-shown) + .label-email, 
+.input-email:focus + .label-email {
+            top: 42px;
+            background-color: white;
+            padding: 0 10px;
+            color: black;
+            left: 21%;
+            opacity: 1;
+        }
+
+.input-cmt:not(:placeholder-shown) + .label-cmt, 
+.input-cmt:focus + .label-cmt {
+                top: 90px;
+                background-color: white;
+                padding: 0 10px;
+                color: black;
+                left: 21%;
+                opacity: 1;
+            }
