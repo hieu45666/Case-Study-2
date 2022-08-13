@@ -31,7 +31,7 @@
     
     <div class="container">
         <div class="post">
-            <div class="trang1">
+            <div id="trang1">
         <div class="box">
             <img src="./images/Testimonial/Avadong.jpg" alt="Ava" class="avatar">
         <div class="content">
@@ -69,9 +69,9 @@
         </div>
     </div>
 
-    <div class="trang2">
+    <div id="trang2">
         <div class="box">
-            <img src="./images/Testimonial/Avadong.jpg" alt="Ava" class="avatar">
+            <img src="./images/Testimonial/Avadung.jpg" alt="Ava" class="avatar">
         <div class="content">
             <h4 class="name">Hưng Đông</h4>
             <p class="time">19:08:12 - 28/09/2022</p>
@@ -80,7 +80,7 @@
         </div>
 
         <div class="box">
-            <img src="./images/Testimonial/Avadong.jpg" alt="Ava" class="avatar">
+            <img src="./images/Testimonial/Avadung.jpg" alt="Ava" class="avatar">
         <div class="content">
             <h4 class="name">Hưng Đông</h4>
             <p class="time">19:08:12 - 28/09/2022</p>
@@ -89,7 +89,7 @@
         </div>
 
         <div class="box">
-            <img src="./images/Testimonial/Avadong.jpg" alt="Ava" class="avatar">
+            <img src="./images/Testimonial/Avadung.jpg" alt="Ava" class="avatar">
         <div class="content">
             <h4 class="name">Hưng Đông</h4>
             <p class="time">19:08:12 - 28/09/2022</p>
@@ -98,7 +98,7 @@
         </div>
 
         <div class="box">
-            <img src="./images/Testimonial/Avadong.jpg" alt="Ava" class="avatar">
+            <img src="./images/Testimonial/Avadung.jpg" alt="Ava" class="avatar">
         <div class="content">
             <h4 class="name">Hưng Đông</h4>
             <p class="time">19:08:12 - 28/09/2022</p>
@@ -107,7 +107,7 @@
         </div>
     </div>
 
-    <div class="trang3">
+    <div id="trang3">
         <div class="box">
             <img src="./images/Testimonial/Avadong.jpg" alt="Ava" class="avatar">
         <div class="content">
@@ -147,9 +147,9 @@
 </div>
     
 <div class="chuyen">
-    <button>1</button>
-    <button>2</button>
-    <button>3</button>
+    <button id="btn1">1</button>
+    <button id="btn2">2</button>
+    <button id="btn3">3</button>
     </div>
 
     <div class="comments">
@@ -169,5 +169,28 @@
 <footer>
     <p>This website is designed by Đỗ Minh Hiếu</p>
 </footer>
+
+<script>
+
+document.getElementById("btn1").addEventListener("click", btn1);
+document.getElementById("btn2").addEventListener("click", btn2);
+document.getElementById("btn3").addEventListener("click", btn3);
+
+function btn1() {
+    document.getElementById("trang1").style.display = 'block';
+    document.getElementById("trang2").style.display = 'none';
+    document.getElementById("trang3").style.display = 'none';
+}
+function btn2() {
+    document.getElementById("trang2").style.display = 'block';
+    document.getElementById("trang1").style.display = 'none';
+    document.getElementById("trang3").style.display = 'none';
+}
+function btn3() {
+    document.getElementById("trang3").style.display = 'block';
+    document.getElementById("trang2").style.display = 'none';
+    document.getElementById("trang1").style.display = 'none';
+}
+</script>
 </body>
 </html>
