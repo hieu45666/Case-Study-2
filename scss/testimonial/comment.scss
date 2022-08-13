@@ -1,11 +1,12 @@
 form {
     width: 100%;
     position: relative;
+    padding-top: 1px;
 }
 
 input {
-    width: 60%;
-    margin: 10px auto;
+    width: 90%;
+    margin: 10px 0;
     display: block;
     padding: 10px;
 }
@@ -21,19 +22,21 @@ label {
 }
 
 .label-name {
-    top: 15px;
-    left: 20%;
+    top: 20px;
+    left: 18%;
     transition: 0.25s;
 }
 
 .label-email {
-    top: 60px;
-    left: 20%;
+    top: 70px;
+    left: 12px;
+    transition: 0.25s;
 }
 
 .label-cmt {
-    top: 100px;
-    left: 20%;
+    top: 110px;
+    left: 12px;
+    transition: 0.25s;
 }
 
 
@@ -41,7 +44,7 @@ label {
 .input-name:focus + .label-name {
         top: 0;
         background-color: white;
-        padding: 0 10px;
+        padding: 0 5px;
         color: black;
         left: 21%;
         opacity: 1;
@@ -49,7 +52,7 @@ label {
 
 .input-email:not(:placeholder-shown) + .label-email, 
 .input-email:focus + .label-email {
-            top: 42px;
+            top: 52px;
             background-color: white;
             padding: 0 10px;
             color: black;
@@ -59,7 +62,7 @@ label {
 
 .input-cmt:not(:placeholder-shown) + .label-cmt, 
 .input-cmt:focus + .label-cmt {
-                top: 90px;
+                top: 100px;
                 background-color: white;
                 padding: 0 10px;
                 color: black;

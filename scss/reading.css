@@ -3,7 +3,6 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  display: flex;
 }
 
 img, h3 {
@@ -60,8 +59,10 @@ img, h3 {
 
 .right {
   right: 0;
+  float: right;
+  justify-content: right;
 }
 
 .left {
-  margin-top: 25px;
-}/*# sourceMappingURL=style1.css.map */
+  margin-top: 10%;
+}/*# sourceMappingURL=reading.css.map */

@@ -1,15 +1,10 @@
-$fontsize: 24px;
-$font: 'Dancing Script', cursive;
 $primary_color: violet;
 
 html, body {
+    margin: 0;
     width: 100%;
     height: 100%;
-    margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-size: $fontsize;
-    font-family: $font;
 }
 
 header {
@@ -18,7 +13,7 @@ header {
     background-color: $primary_color;
 
 img {
-    height: 100%;
+    width: 5%;
 }
 
 h1 {
@@ -29,7 +24,7 @@ h1 {
         list-style-type: none;
         display: flex;
         float: right;
-        margin-top: 27px;
+        transform: translateY(50%);
         margin-right: 100px;
 
         li a {
@@ -40,7 +35,7 @@ h1 {
 
         li a:hover {
             color: yellow;
-            font-size: 30px;
+            font-size: 25px;
         }
     }
 
@@ -48,14 +43,19 @@ h1 {
         display: flex;
         float: right;
         margin: auto;
-        margin-top: 25px;
+        margin-top: 1rem;
        
 
         input {
             border: 2px solid greenyellow;
             border-radius: 12px;
             margin: 0 13px;
-            height: 25px;
+            height: 20px;
+            width: 25px;
+            transition: 0.5s;
+        }
+
+        input:focus {
             width: 250px;
         }
 
@@ -73,11 +73,4 @@ footer {
     width: 100%;
     height: 5%;
     text-align: center;
-}
-
-.main {
-    img {
-        width: 100%;
-        height: 700px;
-    }
 }
