@@ -17,10 +17,10 @@ body {
   height: 300px;
 }
 .box .content {
-  transition: 1s;
+  transition: 0.25s;
 }
 .box .content:hover {
-  transform: scale(1.25, 1.25) translate(20%, 20%);
+  transform: scale(1.2, 1.2) translate(20%, 20%);
 }
 
 .cap1 {

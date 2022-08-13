@@ -1,18 +1,22 @@
-$primary_color: violet;
+$fontsize: 18px;
+$font: 'Dancing Script', cursive;
+$font-family: $font;
 
 html, body {
     margin: 0;
     width: 100%;
     height: 100%;
     padding: 0;
+    font-family: $font-family;
+    font-size: $fontsize;
 }
 
 header {
     width: 100%;
     height: 10%;
-    background-color: $primary_color;
+    background-color: red;
 
-img {
+.logo {
     width: 5%;
 }
 
@@ -35,7 +39,7 @@ h1 {
 
         li a:hover {
             color: yellow;
-            font-size: 25px;
+            background-color: coral;
         }
     }
 
@@ -65,8 +69,20 @@ h1 {
 }
 
 footer {
-    background-color: $primary_color;
+    background-color: violet;
     width: 100%;
     height: 5%;
-    text-align: center;
+
+    p {
+    animation: chuchay 5s infinite;
+
+    @keyframes chuchay {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(100%);
+        }
+    }
+}
 }

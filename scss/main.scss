@@ -3,8 +3,36 @@ $font: 'Dancing Script', cursive;
 $primary_color: violet;
 
 .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2px;
+    background: linear-gradient(to bottom, red, violet);
+
     img {
-        width: 100%;
-        height: 700px;
+        animation: phongto 1s forwards;
+        @keyframes phongto {
+            from {
+                width: 0;
+                height: 0;
+            }
+            to {
+                width: 100%;
+                height: 100%;
+            }
+        }
     }
 }
+
+.box {
+    position: relative;
+    
+    .text {
+        position: absolute;
+        color: yellow;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+
+    }

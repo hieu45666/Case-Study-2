@@ -78,6 +78,9 @@ img, h3 {
 .bookshelf .book:hover h3 {
   display: block;
 }
+.bookshelf .book:hover img {
+  opacity: 0.5;
+}
 .bookshelf img {
   width: 100%;
   height: 100%;

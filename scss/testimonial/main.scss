@@ -14,6 +14,7 @@ html, body {
     justify-content: center;
     align-items: center;
     gap: 5px;
+    background: linear-gradient(to bottom, red, violet);
 
     #trang1, #trang3 {
         display: none;
@@ -24,6 +25,7 @@ html, body {
         .box {
             
             display: flex;
+            align-items: center;
 
             img {
                 width: 100px;

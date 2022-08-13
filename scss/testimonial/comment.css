@@ -3,8 +3,7 @@ form {
   position: relative;
   padding-top: 1px;
 }
-
-input {
+form input {
   width: 90%;
   margin: 10px 0;
   display: block;
@@ -23,7 +22,7 @@ label {
 
 .label-name {
   top: 20px;
-  left: 18%;
+  left: 12px;
   transition: 0.25s;
 }
 
@@ -34,7 +33,7 @@ label {
 }
 
 .label-cmt {
-  top: 110px;
+  top: 120px;
   left: 12px;
   transition: 0.25s;
 }
@@ -44,7 +43,7 @@ label {
   background-color: white;
   padding: 0 5px;
   color: black;
-  left: 21%;
+  left: 30px;
   opacity: 1;
 }
 
@@ -53,7 +52,7 @@ label {
   background-color: white;
   padding: 0 5px;
   color: black;
-  left: 21%;
+  left: 30px;
   opacity: 1;
 }
 
@@ -63,7 +62,7 @@ label {
   background-color: white;
   padding: 0 5px;
   color: black;
-  left: 21%;
+  left: 30px;
   opacity: 1;
 }
 
@@ -72,7 +71,7 @@ label {
   background-color: white;
   padding: 0 10px;
   color: black;
-  left: 21%;
+  left: 30px;
   opacity: 1;
 }
 
@@ -81,7 +80,7 @@ label {
   background-color: white;
   padding: 0 10px;
   color: black;
-  left: 21%;
+  left: 30px;
   opacity: 1;
 }
 
@@ -91,34 +90,34 @@ label {
   background-color: white;
   padding: 0 10px;
   color: black;
-  left: 21%;
+  left: 30px;
   opacity: 1;
 }
 
 .input-cmt:not(:-moz-placeholder-shown) + .label-cmt {
-  top: 100px;
+  top: 103px;
   background-color: white;
   padding: 0 10px;
   color: black;
-  left: 21%;
+  left: 30px;
   opacity: 1;
 }
 
 .input-cmt:not(:-ms-input-placeholder) + .label-cmt {
-  top: 100px;
+  top: 103px;
   background-color: white;
   padding: 0 10px;
   color: black;
-  left: 21%;
+  left: 30px;
   opacity: 1;
 }
 
 .input-cmt:not(:placeholder-shown) + .label-cmt,
 .input-cmt:focus + .label-cmt {
-  top: 100px;
+  top: 103px;
   background-color: white;
   padding: 0 10px;
   color: black;
-  left: 21%;
+  left: 30px;
   opacity: 1;
 }/*# sourceMappingURL=comment.css.map */
