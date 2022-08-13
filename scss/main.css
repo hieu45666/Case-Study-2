@@ -3,40 +3,42 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 2px;
-  background: linear-gradient(to bottom, red, violet);
 }
 .main img {
+  width: 100%;
+  height: 100%;
+}
+
+.box {
+  position: relative;
   -webkit-animation: phongto 1s forwards;
           animation: phongto 1s forwards;
 }
 @-webkit-keyframes phongto {
   from {
-    width: 0;
-    height: 0;
+    margin-top: 1000px;
   }
   to {
-    width: 100%;
-    height: 100%;
+    margin-top: 0;
   }
 }
 @keyframes phongto {
   from {
-    width: 0;
-    height: 0;
+    margin-top: 1000px;
   }
   to {
-    width: 100%;
-    height: 100%;
+    margin-top: 0;
   }
-}
-
-.box {
-  position: relative;
 }
 .box .text {
   position: absolute;
-  color: yellow;
+  display: none;
+  color: red;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.box:hover .text {
+  display: block;
 }/*# sourceMappingURL=main.css.map */

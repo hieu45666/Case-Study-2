@@ -74,14 +74,15 @@ footer {
     height: 5%;
 
     p {
-    animation: chuchay 5s infinite;
+        width: fit-content;
+    animation: chuchay 2s linear infinite alternate;
 
     @keyframes chuchay {
         from {
-            transform: translateX(0);
+            transform: translateX(250px);
         }
         to {
-            transform: translateX(100%);
+            transform: translateX(950px);
         }
     }
 }

@@ -61,22 +61,25 @@ footer {
   height: 5%;
 }
 footer p {
-  -webkit-animation: chuchay 5s infinite;
-          animation: chuchay 5s infinite;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-animation: chuchay 2s linear infinite alternate;
+          animation: chuchay 2s linear infinite alternate;
 }
 @-webkit-keyframes chuchay {
   from {
-    transform: translateX(0);
+    transform: translateX(250px);
   }
   to {
-    transform: translateX(100%);
+    transform: translateX(950px);
   }
 }
 @keyframes chuchay {
   from {
-    transform: translateX(0);
+    transform: translateX(250px);
   }
   to {
-    transform: translateX(100%);
+    transform: translateX(950px);
   }
 }/*# sourceMappingURL=headfoot.css.map */

@@ -6,7 +6,6 @@ html, body {
   font-size: 16px;
   font-family: "Dancing Script", cursive;
   text-align: center;
-  background: linear-gradient(to bottom, red, violet);
 }
 
 .avatar {
